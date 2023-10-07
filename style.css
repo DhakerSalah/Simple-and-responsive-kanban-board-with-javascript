@@ -1,0 +1,169 @@
+.card,
+.create-new-task-block {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  text-align: center;
+  background-color: #f1f1f1;
+  width: 25%;
+  padding: 15px 15px;
+  margin: 8px;
+  min-width: 14rem;
+  min-height: 14rem;
+  border-radius: 0.6rem;
+}
+
+.create-new-task-block {
+  display: none;
+  /* display: flex; */
+  background: #f2f2f2;
+  width: 53%;
+  flex-direction: column;
+}
+
+#todo {
+  background-color: #f2f2f2;
+}
+
+#inprogress {
+  background-color: #f2f2f2;
+  /* display: none; */
+}
+
+#done {
+  background-color: #f2f2f2;
+  /* display: none; */
+}
+
+strong {
+  font-size: 24px;
+  font-family: cursive;
+}
+
+.task {
+  background-color: white;
+  margin: 0.5rem 0rem 0.3rem 0rem;
+  border: 2px solid black;
+  border-radius: 0.4rem;
+  padding: 0.5rem 0.2rem 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.task:hover {
+  background-color: #f9f9f9;
+}
+
+#task-button {
+  margin: 0.2rem 0rem 0.1rem 0rem;
+  background-color: #0866ffff;
+  color: #ffffff;
+  width: 100%;
+  padding: 0.5rem 2.7rem;
+  border: 1px solid transparent;
+  border-radius: 0.4rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#task-button:hover {
+  background-color: #1c6beb;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0.4rem;
+}
+
+.form-row-label {
+  color: #000;
+  font-size: 16px;
+  font-family: sans-serif;
+  width: 20%;
+  padding: 0.3rem;
+  padding-right: 0.5rem;
+  border: 2px solid black;
+  border-right: 0;
+  border-radius: 0.4rem 0rem 0rem 0.4rem;
+}
+
+.form-row-input {
+  border: 2px solid black;
+  border-radius: 0rem 0.4rem 0.4rem 0rem;
+  width: 85%;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-row-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.2rem;
+}
+
+#save-button {
+  margin: 0.2rem 0rem 0.1rem 0rem;
+  background-color: #28a745;
+  color: #ffffff;
+  width: 49.2%;
+  border: 1px solid transparent;
+  padding: 0.5rem 2.7rem;
+  border-radius: 0.4rem;
+  font-size: 16px;
+  cursor: pointer; 
+}
+
+#cancel-button {
+  margin: 0.2rem 0rem 0.1rem 0rem;
+  background-color: #6c757d;
+  color: #ffffff;
+  width: 49.2%;
+  padding: 0.5rem 2.7rem;
+  border-radius: 0.4rem;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+#save-button:hover {
+  background-color: #2c8841;
+}
+
+#cancel-button:hover {
+  background-color: #53575b;
+}
+
+.row {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heading-text {
+  font-size: 2rem;
+  background-color: #fffce1;
+  padding: 0.8rem 1.7rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 800px) {
+  .card {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
